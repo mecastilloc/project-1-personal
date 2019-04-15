@@ -1,0 +1,245 @@
+html {
+    background-image: url("../images/fiction.jpg");
+    background-color: black;
+
+    /* background-image: none; */
+    background-position: center;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+body {
+    /* font-family: 'Fascinate Inline', cursive;
+font-family: 'Fredericka the Great', cursive; */
+font-family: 'Annie Use Your Telescope', cursive;
+    height: 100%;
+    width: 100%;
+    color: rgb(231, 93, 0);
+    font-weight: 900;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 940px;
+}
+
+/* a:hover {
+    color: white;
+    background: orangered;
+}
+
+a, .navlink {
+    text-decoration: none;
+    color: wheat;
+    margin: 5px;
+}
+
+.navlink{
+    font-family: 'Open Sans', sans-serif;
+
+}
+.current {
+    color: orangered;
+    
+} */
+
+#headercont {
+    width: 100%;
+     display: block;
+    font-family: 'Righteous', cursive;
+    margin: auto;
+    text-align: right;
+    border: 1px solid white;
+
+}
+.outter-div {
+    margin: auto;
+    display: block;
+  
+}
+.jumbotron {
+    background-color: rgba(2, 2, 2, 0.7);
+    padding: 25px 16px 25px 16px;
+}
+.display-4{
+    text-align: center;
+        font-family: 'Fascinate Inline', cursive;
+        color: rgb(250, 246, 3);
+        font-size: 60px;
+}
+
+.cont{
+    margin: 10px;
+    background-color: rgba(2, 2, 2, 0.7);
+}
+
+.lead{
+    font-size: 30px;
+    color:aqua;
+}
+
+/* .learnMore{
+    background-color: rgba(2, 2, 2, 0.7);
+    margin-top: 15px;
+} */
+
+h1{
+    color: orangered;
+font-family: 'Fredericka the Great', cursive;
+}
+
+h3{
+    color: peachpuff;
+    font-size: 20px;
+}
+
+#error{
+    color: aqua;
+    background-color: rgba(2, 2, 2, 0.7);
+    font-size: 40px;
+}
+
+/* .learn-h1{
+    text-align: center;
+    color: rgb(250, 246, 3);
+    font-family: 'Fascinate Inline', cursive;
+    margin-bottom: 10px;
+}
+.learn-h3{
+    font-family: 'Annie Use Your Telescope', cursive;
+    margin-bottom: 2px;
+} */
+
+#newbtn, #statsbtn{
+    margin: 5px;
+    font-weight: bold;
+} 
+
+.modal-content {
+    background-color: rgb(243, 224, 198);
+}
+.modal-title{
+    font-size: 30px;
+}
+
+.col-sm {
+    text-align: center;
+}
+
+input[type="text"], textarea {
+    background-color: khaki;
+}
+
+input[type="text"]:focus, textarea {
+    background-color: greenyellow;
+}
+
+#yodabtn {
+    background-image: url("../images/yodabtn.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+}
+
+#sithbtn {
+    background-image: url("../images/sithbtn.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+}
+
+#klinbtn {
+    background-image: url("../images/klinbtn.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+}
+
+#minionbtn {
+    background-image: url("../images/minionbtn.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+}
+
+#piratebtn {
+    background-image: url("../images/piratebtn2.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+}
+
+#morsebtn {
+    background-image: url("../images/morsebtn.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+}
+
+#ferbbtn {
+    background-image: url("../images/ferbbtn.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+}
+
+#gunganbtn {
+    background-image: url("../images/gunganbtn.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+}
+
+.close {
+    display: none;
+}
+
+#closebtn {
+    z-index: 100;
+    position: relative;
+    float: right;
+    background-image: url("../images/closebtn.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+}

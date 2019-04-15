@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Added Moment JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!-- <script src="assets/javascript/duration.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <title>api test</title>
+
+<body class="bg-transparent">
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Api test</h1>
+           
+        </div>
+        <div id="article2"></div>
+        <br>
+<div id="article"></div>
+ <div id="article3"></div>
+
+    </div>
+
+
+    <script>
+var key= "55c220cb58mshee0f3639dbd0c90p1bb460jsn121fe9054ac1"
+
+    // Yoda translations
+//     $.ajax({
+//         url: "https://yodish.p.rapidapi.com/yoda.json?text=Master Obiwan has lost a planet.",
+//        // url: "https://yodish.p.rapidapi.com",
+//        method: 'POST',
+//   headers: { 
+//     'cache-control': 'no-cache',
+//     'Content-Type': 'application/json',
+//     'X-RapidAPI-Key': key,
+//     'header1': 'header-value-1'
+//   },
+// //   qs: { 
+// //     parameter1: 'hellow. Master obiwan has lost a planet' 
+// //   }
+
+//     }).then(function (response) {
+//         console.log(response);
+//         //console.log(queryUrl);
+
+//     });
+    
+//   // sith translations  
+//     $.ajax({
+//         url: "https://sith.p.rapidapi.com/sith.json?text=I+went+to+coruscant+which+was+ten+parsec+away!",
+//        // url: "https://yodish.p.rapidapi.com",
+//        method: 'GET',
+//   headers: { 
+//     'cache-control': 'no-cache',
+//     'Content-Type': 'application/json',
+//     'X-RapidAPI-Key': key,
+//     'header1': 'header-value-1'
+//   },
+// //   qs: { 
+// //     parameter1: 'hellow. Master obiwan has lost a planet' 
+// //   }
+
+//     }).then(function (response) {
+//         console.log(response);
+//         //console.log(queryUrl);
+
+//     });
+
+// // minion translation   
+// $.ajax({
+//         url: "https://rapidapi.p.rapidapi.com/minion.json?text=Hello, I am hungry!",
+//        // url: "https://yodish.p.rapidapi.com",
+//        method: 'POST',
+//   headers: { 
+//     'cache-control': 'no-cache',
+//     'Content-Type': 'application/x-www-form-urlencoded',
+//     "X-RapidAPI-Host": "minion.https://rapidapi.p.rapidapi.com",
+//     'X-RapidAPI-Key': key,
+   
+//   },
+// //   qs: { 
+// //     parameter1: 'hellow. Master obiwan has lost a planet' 
+// //   }
+
+//     }).then(function (response) {
+//         console.log(response);
+//         //console.log(queryUrl);
+
+//     });
+
+
+
+// // klingon
+$.ajax({
+        url: "https://api.funtranslations.com/translate/klingon.json?text=Who%20do%20you%20work%20for%3F%20They%20are%20going%20to%20terminate%20you.",
+       // url: "https://yodish.p.rapidapi.com",
+       method: 'POST',
+//   headers: { 
+   // 'cache-control': 'no-cache',
+   // 'Content-Type': 'application/x-www-form-urlencoded',
+    // "X-RapidAPI-Host": "klingon.p.rapidapi.com",
+    // 'X-RapidAPI-Key': "55c220cb58mshee0f3639dbd0c90p1bb460jsn121fe9054ac1",
+    // "X-FunTranslations-Api-Secret": "test",
+   
+//   },
+//   qs: { 
+//     parameter1: 'hellow. Master obiwan has lost a planet' 
+//   }
+
+    }).then(function (response) {
+       
+ 
+        console.log(response);
+        $("#article2").text(JSON.stringify( response));
+        //console.log(queryUrl);
+
+    }) .catch(err => {
+        $("#article2").text(err.responseJSON.error.message);
+        console.log(err.responseJSON.error.message)
+    });
+    
+    
+//     dbx.method(arg)
+//      .then(fn)
+//   .catch(err => {
+//     if (err.status === 429) {
+//       err.response.get('retry-after')
+//       console.log(err.response.get('retry-after'))
+//     }
+//   })
+
+// //pirate
+// $.ajax({
+//         url: "https://rapidapi.p.rapidapi.com/pirate.json?text=Hello i want to go to the tresure island",
+//        // url: "https://yodish.p.rapidapi.com",
+//        method: 'POST',
+//   headers: { 
+//    // 'cache-control': 'no-cache',
+//    'Content-Type': 'application/x-www-form-urlencoded',
+//     "X-RapidAPI-Host": "piratespeak.p.rapidapi.com",
+//     'X-RapidAPI-Key': key,
+//     //"X-FunTranslations-Api-Secret": "test",
+   
+//   },
+// //   qs: { 
+// //     parameter1: 'hellow. Master obiwan has lost a planet' 
+// //   }
+
+//     }).then(function (response) {
+//         console.log(response);
+//         //console.log(queryUrl);
+
+//     });
+// // braile bad translation
+// $.ajax({
+//         url: "https://braille.p.rapidapi.com/braille?text=Hi, I am from Mars and I speak Braille.",
+//        // url: "https://yodish.p.rapidapi.com",
+//        method: 'GET',
+//   headers: { 
+//    // 'cache-control': 'no-cache',
+//   // 'Content-Type': 'application/x-www-form-urlencoded',
+//     "X-RapidAPI-Host": "braille.p.rapidapi.com",
+//     'X-RapidAPI-Key': key,
+//     "X-FunTranslations-Api-Secret": "test",
+   
+//   },
+// //   qs: { 
+// //     parameter1: 'hellow. Master obiwan has lost a planet' 
+// //   }
+
+//     }).then(function (response) {
+//         document.write(JSON.stringify( response));
+//         //console.log(queryUrl);
+
+//     });
+
+// // morse empty object returned
+// var jtext = JSON.stringify({"text":"grit"})
+// $.ajax({
+    
+//         url: "https://gsamuel-morse-code-v1.p.rapidapi.com/",
+//        // url: "https://yodish.p.rapidapi.com",
+//        method: 'POST',
+//   headers: { 
+//    'cache-control': 'no-cache',
+//   'Content-Type': 'application/json',
+//     "X-RapidAPI-Host": "gsamuel-morse-code-v1.p.rapidapi.com",
+//    'X-RapidAPI-Key': key,
+//     //"X-FunTranslations-Api-Secret": "test",
+   
+//   },
+//   //body: jtext
+
+
+
+
+      
+//   qs: { 
+//     send: jtext 
+//   }
+
+//     }).then(function (response) {
+//         document.write(JSON.stringify( response));
+//         console.log(response);
+
+//     });
+
+
+//morse 2 5 per hour
+// $.ajax({
+//         url: "https:///morse.p.rapidapi.com/morse.json?text=I made",
+//        // url: "https://yodish.p.rapidapi.com",
+//        method: 'POST',
+//   headers: { 
+//    // 'cache-control': 'no-cache',
+//    'Content-Type': 'application/x-www-form-urlencoded',
+//     "X-RapidAPI-Host": "morse.p.rapidapi.com",
+//     'X-RapidAPI-Key': key,
+//     "X-FunTranslations-Api-Secret": "test",
+   
+//   },
+// //   qs: { 
+// //     parameter1: 'hellow. Master obiwan has lost a planet' 
+// //   }
+
+//     }).then(function (response) {
+//         console.log(response);
+//         $("#article").text(JSON.stringify( response));
+//         //console.log(queryUrl);
+
+//     });
+
+// // phineas and pherb
+// $.ajax({
+//         url: "https://erblatin.p.rapidapi.com/ferblatin.json?text=Well, if by that you mean we should",
+//        // url: "https://yodish.p.rapidapi.com",
+//        method: 'GET',
+//   headers: { 
+//    // 'cache-control': 'no-cache',
+//   // 'Content-Type': 'application/x-www-form-urlencoded',
+//     "X-RapidAPI-Host": "ferblatin.p.rapidapi.com",
+//     'X-RapidAPI-Key': key,
+//   //"X-FunTranslations-Api-Secret": "test",
+   
+//   },
+// //   qs: { 
+// //     parameter1: 'hellow. Master obiwan has lost a planet' 
+// //   }
+
+//     }).then(function (response) {
+//         document.write(JSON.stringify( response));
+//         //console.log(queryUrl);
+
+//     });
+
+
+//jar jar binks
+// $.ajax({
+//         url: "https://gungan.p.rapidapi.com/gungan.json?text=You+came+to+my+home+and+I+said+okay!",
+//        // url: "https://yodish.p.rapidapi.com",
+//        method: 'GET',
+//   headers: { 
+//    // 'cache-control': 'no-cache',
+//   // 'Content-Type': 'application/x-www-form-urlencoded',
+//     "X-RapidAPI-Host": "gungan.p.rapidapi.com",
+//     'X-RapidAPI-Key': key,
+//   //"X-FunTranslations-Api-Secret": "test",
+   
+//   },
+// //   qs: { 
+// //     parameter1: 'hellow. Master obiwan has lost a planet' 
+// //   }
+
+//     }).then(function (response) {
+//         document.write(JSON.stringify( response));
+//         //console.log(queryUrl);
+
+//     });
+
+// //wikipwdia
+
+// $.ajax({
+    
+//         type: "GET",
+
+//         url: "http://en.wikipedia.org/w/api.php?action=parse&format=json&prop=text&section=0&page=yoda&callback=?",
+
+//         contentType: "application/json; charset=utf-8",
+
+//         async: false,
+
+//         dataType: "json",
+
+//         success: function (data, textStatus, jqXHR) {
+
+//             var markup = data.parse.text["*"];
+// //$("#response").text(JSON.stringify(data))
+//             var blurb = $('<div></div>').html(markup);
+
+//  
+
+//             // remove links as they will not work
+
+//             blurb.find('a').each(function() { $(this).replaceWith($(this).html()); });
+
+
+//             // remove any references
+
+//             blurb.find('sup').remove();
+
+//  // remove cite error
+
+//             blurb.find('.mw-ext-cite-error').remove();
+
+//             $('#article').html($(blurb).find('p'));
+
+//         },
+
+//         error: function (errorMessage) {
+
+//         }
+
+//     });
+
+
+
+// klingon2
+// $.ajax({
+//         url: "https://klingon.p.rapidapi.com/klingon?text=i+am+the+best",
+//        // url: "https://yodish.p.rapidapi.com",
+//        method: 'GET',
+//   headers: { 
+//    // 'cache-control': 'no-cache',
+//    'Content-Type': 'application/x-www-form-urlencoded',
+//     "X-RapidAPI-Host": "klingon.p.rapidapi.com",
+//     'X-RapidAPI-Key': "55c220cb58mshee0f3639dbd0c90p1bb460jsn121fe9054ac1",
+//     //"X-FunTranslations-Api-Secret": "test",
+   
+//   },
+// //   qs: { 
+// //     parameter1: 'hellow. Master obiwan has lost a planet' 
+// //   }
+
+//     }).then(function (response) {
+//         console.log(response);
+//         $("#article3").text(JSON.stringify( response));
+
+//         console.log("error");
+//         $("#article3").text("error"+JSON.stringify(response.success.total));
+//         //console.log(queryUrl);
+
+//     });
+
+
+
+    </script>
+
+</body>
+
+</html>

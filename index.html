@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- <script src="assets/javascript/duration.js"></script> -->
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Fascinate+Inline|Fredericka+the+Great" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+  <title>Project 1 Home</title>
+</head>
+
+<body class="bg-transparent">
+
+  <!-- <header>
+    <div id="headercont">
+      <div class="divnav">
+        <nav>
+          Add a class current to style the current page link
+          <a class="navlink current" href="index.html">Home</a>
+          <a class="navlink" href="learnmore.html">About</a>
+        </nav>
+      </div>
+    </div>
+  </header> -->
+  <div class="outter-div">
+    <div class="container">
+
+      <div id="jumbotron" class="jumbotron">
+        <h1 class="display-4">Language Translator</h1>
+        <p class="lead">Welcome all! This page aims to translate <del>boring</del>
+          common english into all sorts of languages from your favorite tv shows
+          and movies
+        </p>
+      </div>
+      <!-- data populated from apis calls -->
+      <div id="original-txt" class="container  cont">
+        <h1 id="original-h1"></h1>
+        <h3 id="original-h3"></h3>
+      </div>
+
+      <div id="trans-txt" class="container cont">
+        <h1 id="trans-h1"></h1>
+        <h3 id="trans-h3"></h3>
+      </div>
+
+      <div id="fact-txt" class="container cont">
+        <h1 id="fact-h1"></h1>
+        <h3 id="fact-h3"></h3>
+      </div>
+
+      <p id="error"></p>
+
+      <!-- Button trigger modal -->
+      <div>
+      <button id="newbtn" type="button" class="btn btn-warning" data-toggle="modal"
+        data-target="#translationModal">
+        Translate Now!
+      </button>
+      <button id="statsbtn" class="btn btn-success" type="button"  data-toggle="modal"
+      data-target="#statisticsModal">
+      Statistics
+    </button>
+    </div>
+      <!-- Modal  translation-->
+      <div class="modal fade" id="translationModal" tabindex="-1" role="dialog" aria-labelledby="translationModal"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Make a funny translation</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <button id="closebtn" type="button" class="btn" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form class="needs-validation" novalidate>
+                <div class="form-group">
+                  <label for="trans-text">Text to translate:</label>
+                  <input type="text" class="form-control" id="trans-text" placeholder="Type text in English please"
+                    name="trans-text" required>
+                  <div id="validation-text"></div>
+                </div>
+                <div class="container">
+                  <div class="row ">
+                    <div class="col align-self-center">
+                      <button id="yodabtn" type="submit" class="btn btn-outline-warning"></button>
+                      <p class="btn-text">To Yoda</p>
+                    </div>
+                    <div class="col align-self-center">
+                      <button id="sithbtn" type="submit" class="btn btn-outline-warning"></button>
+                      <p class="btn-text">To Sith</p>
+                    </div>
+                    <div class="col align-self-center">
+                      <button id="klinbtn" type="submit" class="btn btn-outline-warning"></button>
+                      <p class="btn-text">To Klingon</p>
+                    </div>
+                    <div class="col align-self-center">
+                      <button id="piratebtn" type="submit" class="btn btn-outline-warning"></button>
+                      <p class="btn-text">To Pirate</p>
+                    </div>
+                    <div class="col align-self-center">
+                      <button id="minionbtn" type="submit" class="btn btn-outline-warning"></button>
+                      <p class="btn-text">To Minion</p>
+                    </div>
+                    <div class="col align-self-center">
+                      <button id="gunganbtn" type="submit" class="btn btn-outline-warning"></button>
+                      <p class="btn-text">To Gungan</p>
+                    </div>
+                    <div class="col align-self-center">
+                      <button id="ferbbtn" type="submit" class="btn btn-outline-warning"></button>
+                      <p class="btn-text">To FerbLatin</p>
+                    </div>
+                    <div class="col align-self-center">
+                      <button id="morsebtn" type="submit" class="btn btn-outline-warning"></button>
+                      <p class="btn-text">To Morse (BONUS)</p>
+                    </div>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+            <div class="modal-footer">
+              </div>
+          </div>
+        </div>
+      </div>
+   <!-- Modal  statistics-->
+   <div class="modal fade" id="statisticsModal" tabindex="-1" role="dialog" aria-labelledby="statisticsModal"
+   aria-hidden="true">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title">Traslations Statistics</h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+         <button id="closebtn" type="button" class="btn" data-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+           <div class="container">
+             <div class="row ">
+              <div class="col align-self-center">
+                <button id="yodabtn"  class="btn btn-outline-warning"></button>
+                <p id="yodastats"></p>
+              </div>
+              <div class="col align-self-center">
+                <button id="sithbtn" class="btn btn-outline-warning"></button>
+                <p id="sithstats"></p>
+              </div>
+              <div class="col align-self-center">
+                <button id="klinbtn" class="btn btn-outline-warning"></button>
+                <p id="klingonstats"></p>
+              </div>
+              <div class="col align-self-center">
+                <button id="piratebtn" class="btn btn-outline-warning"></button>
+                <p id="piratestats"></p>
+              </div>
+              <div class="col align-self-center">
+                <button id="minionbtn" class="btn btn-outline-warning"></button>
+                <p id="minionstats"></p>
+              </div>
+              <div class="col align-self-center">
+                <button id="gunganbtn" class="btn btn-outline-warning"></button>
+                <p id="gunganstats"></p>
+              </div>
+              <div class="col align-self-center">
+                <button id="ferbbtn" class="btn btn-outline-warning"></button>
+                <p id="ferbstats"></p>
+              </div>
+              <div class="col align-self-center">
+                <button id="morsebtn" class="btn btn-outline-warning"></button>
+                <p id="morsestats"></p>
+              </div>
+             </div>
+           </div>
+
+         </form>
+       </div>
+       <div class="modal-footer">
+          
+         </div>
+     </div>
+   </div>
+ </div>
+
+    </div>
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+  <script src="assets/javascript/java.js"></script>
+</body>
+
+</html>
