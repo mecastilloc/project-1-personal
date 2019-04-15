@@ -118,7 +118,7 @@ function renderTranslation(result) {
 function facts(frase) {
     $.ajax({
         type: "GET",
-        url: "http://en.wikipedia.org/w/api.php?action=parse&format=json&prop=text&section=0&page=" + frase + "&callback=?",
+        url: "https://en.wikipedia.org/w/api.php?action=parse&format=json&prop=text&section=0&page=" + frase + "&callback=?",
         contentType: "application/json; charset=utf-8",
         async: false,
         dataType: "json",
@@ -176,7 +176,7 @@ function yodaCall() {
              //generate random to retrieve wiki frase
             var x = Math.floor((Math.random() * yodaArr.length));
             console.log(x);
-            var frase = yodaArr[x];
+            var frase = yodaArr[0];
             console.log("wiki Frase: " + frase);
             //wikipwdia
             facts(frase);
