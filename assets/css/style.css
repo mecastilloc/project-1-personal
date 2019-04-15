@@ -1,8 +1,6 @@
 html {
     background-image: url("../images/fiction.jpg");
     background-color: black;
-
-    /* background-image: none; */
     background-position: center;
     -o-background-size: cover;
     -webkit-background-size: cover;
@@ -14,9 +12,7 @@ html {
 }
 
 body {
-    /* font-family: 'Fascinate Inline', cursive;
-font-family: 'Fredericka the Great', cursive; */
-font-family: 'Annie Use Your Telescope', cursive;
+    font-family: 'Annie Use Your Telescope', cursive;
     height: 100%;
     width: 100%;
     color: rgb(231, 93, 0);
@@ -27,107 +23,77 @@ font-family: 'Annie Use Your Telescope', cursive;
     max-width: 940px;
 }
 
-/* a:hover {
-    color: white;
-    background: orangered;
-}
-
-a, .navlink {
-    text-decoration: none;
-    color: wheat;
-    margin: 5px;
-}
-
-.navlink{
-    font-family: 'Open Sans', sans-serif;
-
-}
-.current {
-    color: orangered;
-    
-} */
-
 #headercont {
     width: 100%;
-     display: block;
+    display: block;
     font-family: 'Righteous', cursive;
     margin: auto;
     text-align: right;
     border: 1px solid white;
-
 }
+
 .outter-div {
     margin: auto;
     display: block;
-  
 }
+
 .jumbotron {
     background-color: rgba(2, 2, 2, 0.7);
     padding: 25px 16px 25px 16px;
 }
-.display-4{
+
+.display-4 {
     text-align: center;
-        font-family: 'Fascinate Inline', cursive;
-        color: rgb(250, 246, 3);
-        font-size: 60px;
+    font-family: 'Fascinate Inline', cursive;
+    color: rgb(250, 246, 3);
+    font-size: 60px;
 }
 
-.cont{
+.cont {
     margin: 10px;
     background-color: rgba(2, 2, 2, 0.7);
 }
 
-.lead{
+.lead {
     font-size: 30px;
-    color:aqua;
+    color: aqua;
 }
 
-/* .learnMore{
-    background-color: rgba(2, 2, 2, 0.7);
-    margin-top: 15px;
-} */
-
-h1{
+h1 {
     color: orangered;
-font-family: 'Fredericka the Great', cursive;
+    font-family: 'Fredericka the Great', cursive;
 }
 
-h3{
+h3 {
     color: peachpuff;
     font-size: 20px;
 }
 
-#error{
+#error {
     color: aqua;
     background-color: rgba(2, 2, 2, 0.7);
     font-size: 40px;
 }
 
-/* .learn-h1{
-    text-align: center;
-    color: rgb(250, 246, 3);
-    font-family: 'Fascinate Inline', cursive;
-    margin-bottom: 10px;
-}
-.learn-h3{
-    font-family: 'Annie Use Your Telescope', cursive;
-    margin-bottom: 2px;
-} */
-
-#newbtn, #statsbtn{
+#newbtn, #statsbtn {
     margin: 5px;
     font-weight: bold;
-} 
+}
 
 .modal-content {
     background-color: rgb(243, 224, 198);
 }
-.modal-title{
+
+.modal-title {
     font-size: 30px;
 }
 
-.col-sm {
+.col{
     text-align: center;
+}
+
+#bonus{
+    color: blue;
 }
 
 input[type="text"], textarea {

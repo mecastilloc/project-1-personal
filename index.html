@@ -11,9 +11,10 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Fascinate+Inline|Fredericka+the+Great" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/style.css">
-  <title>Project 1 Home</title>
+  <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Fascinate+Inline|Fredericka+the+Great"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Project 1 Personal</title>
 </head>
 
 <body class="bg-transparent">
@@ -39,35 +40,17 @@
           and movies
         </p>
       </div>
-      <!-- data populated from apis calls -->
-      <div id="original-txt" class="container  cont">
-        <h1 id="original-h1"></h1>
-        <h3 id="original-h3"></h3>
-      </div>
 
-      <div id="trans-txt" class="container cont">
-        <h1 id="trans-h1"></h1>
-        <h3 id="trans-h3"></h3>
-      </div>
-
-      <div id="fact-txt" class="container cont">
-        <h1 id="fact-h1"></h1>
-        <h3 id="fact-h3"></h3>
-      </div>
-
-      <p id="error"></p>
 
       <!-- Button trigger modal -->
       <div>
-      <button id="newbtn" type="button" class="btn btn-warning" data-toggle="modal"
-        data-target="#translationModal">
-        Translate Now!
-      </button>
-      <button id="statsbtn" class="btn btn-success" type="button"  data-toggle="modal"
-      data-target="#statisticsModal">
-      Statistics
-    </button>
-    </div>
+        <button id="newbtn" type="button" class="btn btn-warning" data-toggle="modal" data-target="#translationModal">
+          Translate Now!
+        </button>
+        <button id="statsbtn" class="btn btn-success" type="button" data-toggle="modal" data-target="#statisticsModal">
+          Statistics
+        </button>
+      </div>
       <!-- Modal  translation-->
       <div class="modal fade" id="translationModal" tabindex="-1" role="dialog" aria-labelledby="translationModal"
         aria-hidden="true">
@@ -82,6 +65,7 @@
             </div>
             <div class="modal-body">
               <form class="needs-validation" novalidate>
+               
                 <div class="form-group">
                   <label for="trans-text">Text to translate:</label>
                   <input type="text" class="form-control" id="trans-text" placeholder="Type text in English please"
@@ -120,80 +104,94 @@
                     </div>
                     <div class="col align-self-center">
                       <button id="morsebtn" type="submit" class="btn btn-outline-warning"></button>
-                      <p class="btn-text">To Morse (BONUS)</p>
+                      <p class="btn-text">To Morse</p>
                     </div>
                   </div>
+                  <p id="bonus">*Morse Code translation is a BONUS feature</p>
                 </div>
 
               </form>
             </div>
-            <div class="modal-footer">
-              </div>
+            <!-- <div class="modal-footer">
+              </div> -->
           </div>
         </div>
       </div>
-   <!-- Modal  statistics-->
-   <div class="modal fade" id="statisticsModal" tabindex="-1" role="dialog" aria-labelledby="statisticsModal"
-   aria-hidden="true">
-   <div class="modal-dialog" role="document">
-     <div class="modal-content">
-       <div class="modal-header">
-         <h5 class="modal-title">Traslations Statistics</h5>
-         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-           <span aria-hidden="true">&times;</span>
-         </button>
-         <button id="closebtn" type="button" class="btn" data-dismiss="modal" aria-label="Close"></button>
-       </div>
-       <div class="modal-body">
-           <div class="container">
-             <div class="row ">
-              <div class="col align-self-center">
-                <button id="yodabtn"  class="btn btn-outline-warning"></button>
-                <p id="yodastats"></p>
+      <!-- Modal  statistics-->
+      <div class="modal fade" id="statisticsModal" tabindex="-1" role="dialog" aria-labelledby="statisticsModal"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Traslations Statistics</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <button id="closebtn" type="button" class="btn" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="row ">
+                  <div class="col align-self-center">
+                    <button id="yodabtn" class="btn btn-outline-warning"></button>
+                    <p id="yodastats"></p>
+                  </div>
+                  <div class="col align-self-center">
+                    <button id="sithbtn" class="btn btn-outline-warning"></button>
+                    <p id="sithstats"></p>
+                  </div>
+                  <div class="col align-self-center">
+                    <button id="klinbtn" class="btn btn-outline-warning"></button>
+                    <p id="klingonstats"></p>
+                  </div>
+                  <div class="col align-self-center">
+                    <button id="piratebtn" class="btn btn-outline-warning"></button>
+                    <p id="piratestats"></p>
+                  </div>
+                  <div class="col align-self-center">
+                    <button id="minionbtn" class="btn btn-outline-warning"></button>
+                    <p id="minionstats"></p>
+                  </div>
+                  <div class="col align-self-center">
+                    <button id="gunganbtn" class="btn btn-outline-warning"></button>
+                    <p id="gunganstats"></p>
+                  </div>
+                  <div class="col align-self-center">
+                    <button id="ferbbtn" class="btn btn-outline-warning"></button>
+                    <p id="ferbstats"></p>
+                  </div>
+                  <div class="col align-self-center">
+                    <button id="morsebtn" class="btn btn-outline-warning"></button>
+                    <p id="morsestats"></p>
+                  </div>
+                </div>
               </div>
-              <div class="col align-self-center">
-                <button id="sithbtn" class="btn btn-outline-warning"></button>
-                <p id="sithstats"></p>
-              </div>
-              <div class="col align-self-center">
-                <button id="klinbtn" class="btn btn-outline-warning"></button>
-                <p id="klingonstats"></p>
-              </div>
-              <div class="col align-self-center">
-                <button id="piratebtn" class="btn btn-outline-warning"></button>
-                <p id="piratestats"></p>
-              </div>
-              <div class="col align-self-center">
-                <button id="minionbtn" class="btn btn-outline-warning"></button>
-                <p id="minionstats"></p>
-              </div>
-              <div class="col align-self-center">
-                <button id="gunganbtn" class="btn btn-outline-warning"></button>
-                <p id="gunganstats"></p>
-              </div>
-              <div class="col align-self-center">
-                <button id="ferbbtn" class="btn btn-outline-warning"></button>
-                <p id="ferbstats"></p>
-              </div>
-              <div class="col align-self-center">
-                <button id="morsebtn" class="btn btn-outline-warning"></button>
-                <p id="morsestats"></p>
-              </div>
-             </div>
-           </div>
+            </div>
+            <!-- <div class="modal-footer">
+         </div> -->
+          </div>
+        </div>
+      </div>
 
-         </form>
-       </div>
-       <div class="modal-footer">
-          
-         </div>
-     </div>
-   </div>
- </div>
+      <!-- data populated from apis calls -->
+      <div id="original-txt" class="container  cont">
+        <h1 id="original-h1"></h1>
+        <h3 id="original-h3"></h3>
+      </div>
 
+      <div id="trans-txt" class="container cont">
+        <h1 id="trans-h1"></h1>
+        <h3 id="trans-h3"></h3>
+      </div>
+
+      <div id="fact-txt" class="container cont">
+        <h1 id="fact-h1"></h1>
+        <h3 id="fact-h3"></h3>
+      </div>
+      <p id="error"></p>
     </div>
   </div>
-  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

@@ -16,11 +16,11 @@ var firedB = firebase.database();
 var key = "55c220cb58mshee0f3639dbd0c90p1bb460jsn121fe9054ac1";
 var keyFun = "test";
 var yodaArr = ["yoda", "Jedi", "Dagobah", "The_Force", "Object–subject–verb"];
-var sithArr = ["Darth_Maul","Darth_Vader","Darth Maul: Shadow Hunter","Might_makes_right"];
+var sithArr = ["Darth_Maul","Darth_Vader","Darth Maul: Shadow Hunter","Palpatine"];
 var klingonArr = ["klingon","Kahless", "The_Klingon_Dictionary"];
 var pirateArr = ["Privateer","Commerce_raiding","Ahoy_(greeting)"];
-var minionArr = ["Minions_(Despicable_Me)", "Minions_Paradise", "Minions_(film)", "Minions_(Despicable_Me)"];
-var gunganArr = ["List_of_Star_Wars_species_(F–J)#Gungan", "Jar_Jar_Binks", "Naboo"];
+var minionArr = ["Minions_(Despicable_Me)", "Minions_Paradise", "Minions_(film)", "Eruption_(instrumental)"];
+var gunganArr = ["Jar_Jar_Binks", "Star_Wars:_Episode_I_–_The_Phantom_Menace", "Jar_Jar_Binks_Must_Die" , "Naboo"];
 var ferbArr = ["Ferb_Fletcher", "Phineas_and_Ferb", "Phineas_Flynn", "Perry_the_Platypus"];
 var morseArr = ["Morse_code", "Samuel_Morse", "Character_encoding", "Telegraphy", "SOS"];
 
@@ -176,7 +176,7 @@ function yodaCall() {
              //generate random to retrieve wiki frase
             var x = Math.floor((Math.random() * yodaArr.length));
             console.log(x);
-            var frase = yodaArr[0];
+            var frase = yodaArr[x];
             console.log("wiki Frase: " + frase);
             //wikipwdia
             facts(frase);
@@ -441,7 +441,7 @@ function morseCall() {
              //generate random to retrieve wiki frase
              var x = Math.floor((Math.random() * morseArr.length));
              console.log(x);
-             var frase = morseArr[x];
+             var frase = morseArr[0];
              console.log("wiki Frase: " + frase);
              //wikipwdia
              facts(frase);
